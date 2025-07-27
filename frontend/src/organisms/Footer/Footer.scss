@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+.footer {
+  background: $color-card;
+  border-top: 1px solid #e5e7eb;
+  padding: 1rem 0;
+  margin-top: 2rem;
+  transition: background 0.3s, color 0.3s;
+  &.dark {
+    background: $color-secondary;
+    border-top: 1px solid #374151;
+  }
+}
+
+.footer-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-message {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+  transition: color 0.3s;
+  .dark & {
+    color: #9ca3af;
+  }
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  transition: color 0.3s;
+  .dark & {
+    color: #9ca3af;
+  }
+}
+
+.footer-link {
+  display: flex;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
+  &:hover {
+    color: #2563eb;
+  }
+  .dark & {
+    &:hover {
+      color: #60a5fa;
+    }
+  }
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  margin-right: 0.25em;
+} 

@@ -1,0 +1,105 @@
+.ollama-chat-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.ollama-chat-header {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h2 {
+    color: #333;
+    margin-bottom: 8px;
+  }
+
+  p {
+    color: #666;
+    margin: 0;
+  }
+}
+
+.ollama-chat-input-container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.ollama-chat-textarea {
+  flex: 1;
+  padding: 16px;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  font-size: 16px;
+  resize: vertical;
+  min-height: 60px;
+  font-family: inherit;
+
+  &:focus {
+    outline: none;
+    border-color: #667eea;
+  }
+
+  &:disabled {
+    background-color: #f8f9fa;
+    cursor: not-allowed;
+  }
+}
+
+.ollama-chat-ask-button {
+  padding: 16px 24px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+
+  &:hover:not(:disabled) {
+    background: #5a67d8;
+  }
+
+  &:disabled {
+    background: #cbd5e0;
+    cursor: not-allowed;
+  }
+}
+
+.ollama-chat-loading {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.ollama-chat-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 16px;
+}
+
+.ollama-chat-response-container {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e9ecef;
+
+  h3 {
+    margin-top: 0;
+    color: #333;
+  }
+}
+
+.ollama-chat-response {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  color: #333;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 
